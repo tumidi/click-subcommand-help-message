@@ -1,0 +1,17 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "click-test"
+version = "0.1.0"
+description = ""
+authors = ["tumidi <tumidi@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = { git = "https://github.com/pallets/click.git", rev = "d73083e3" }
+
+[tool.poetry.scripts]
+click-test-cli = 'click_test.cli:cli'
